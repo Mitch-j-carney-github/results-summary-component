@@ -1,0 +1,53 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+
+    font-size: 16px;
+}
+
+.box-container {
+
+    display: grid;
+    height: 100vh;
+    place-content: center;
+}
+
+.box-1 {
+
+    display: grid;
+    grid-template-areas: "header header2" "results summary" "results submit";
+    grid-template-rows: 150px 150px;
+    grid-template-columns: repeat(2, 50%);
+}
+
+h1 {
+
+    grid-area: header;
+    background-color: hsl(241, 81%, 54%);
+}
+
+h2 {
+
+    grid-area: header2;
+}
+
+p {
+
+    grid-area: results;
+    background-color: hsl(241, 81%, 54%);
+}
+
+
+ul {
+
+    grid-area: summary;
+}
+
+input {
+
+    grid-area: submit;
+}
