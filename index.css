@@ -20,7 +20,7 @@ html {
 
     display: grid;
     grid-template-areas: "header header2" "results summary" "results submit";
-    grid-template-rows: 150px 150px;
+    grid-template-rows: 40px 300px;
     grid-template-columns: repeat(2, 50%);
 }
 
@@ -45,6 +45,42 @@ p {
 ul {
 
     grid-area: summary;
+    padding-left: 30px;
+    
+}
+
+span {
+
+    color: black;
+}
+
+.reaction{
+
+    list-style-image: url(icon-reaction.svg);
+    margin-top: 20px;
+    color: hsl(0, 100%, 67%);
+    background-color: aqua;
+}
+
+.memory {
+
+    list-style-image: url(icon-memory.svg);
+    margin-top: 25px;
+    color: hsl(39, 100%, 56%);
+}
+
+.verbal {
+
+    list-style-image: url(icon-verbal.svg);
+    margin-top: 25px;
+    color: hsl(166, 100%, 37%);
+}
+
+.visual {
+
+    list-style-image: url(icon-visual.svg);
+    margin-top: 25px;
+    color: hsl(234, 85%, 45%);
 }
 
 input {
